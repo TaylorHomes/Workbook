@@ -36,8 +36,12 @@ urlpatterns = [
         TemplateView.as_view(template_name='development.html'),
         name='development'),
     path(
-        'contact/',
-        TemplateView.as_view(template_name='contact.html'),
-        name='contact'),
+        'about/',
+        TemplateView.as_view(template_name='about.html'),
+        name='about'),
+    path(
+        'resume/',
+        TemplateView.as_view(template_name='resume.html'),
+        name='resume'),
 ] + static(
     settings.STATIC_URL, document_root=settings.STATIC_ROOT)

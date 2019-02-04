@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% block title %}
+{% load staticfiles %}
+Resume - {{ block.super }}
+{% endblock title %}
+{% block content %}
+
+<header>
+    <div class="navbar">
+        <nav class="dt w-100 border-box pa3 ph5-ns">
+            <a class="dtc v-mid mid-gray link dim w-25" href="{% url 'home' %}" title="Home">
+                <img src="{% static 'signature-one.png' %}" class="dib w3 h3 br-100" alt="Site Name">
+            </a>
+            <div class="dtc v-mid w-75 tr">
+                <div class="fonts">
+                    <a class="link dim dark-gray f6 f4-ns dib mr3 mr4-ns" href="{% url 'illustration' %}" title="Illustration">Illustration</a>
+                    <a class="link dim dark-gray f6 f4-ns dib mr3 mr4-ns" href="{% url 'development' %}" title="Development">Development
+                    </a>
+                    <a class="link dim dark-gray f6 f4-ns dib mr3 mr4-ns" href="{% url 'resume' %}" title="Resume">Resume</a>
+                    <a class="link dim dark-gray f6 f4-ns dib" href="{% url 'about' %}" title="About">About
+
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<!-- <div class="resume">
+    <div class="sheet"> <img src="{% static 'resume-final.png' %}" href="{% static 'resume-final.png' %}">
+    </div>
+</div> -->
+
+<div class="resume">
+    <div class="sheet">
+
+        <article>
+            <a href="{% static 'resume-final.png' %}" target="_blank">
+                <div role="img" aria-label="Primer movie" class="grow aspect-ratio--4x6" style="background: url('{% static 'resume-final.png' %}') no-repeat center center; background-size: cover;"></div>
+            </a>
+        </article>
+
+    </div>
+</div>
+
+{% endblock content %}
