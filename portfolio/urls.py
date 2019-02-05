@@ -28,6 +28,10 @@ urlpatterns = [
         TemplateView.as_view(template_name='kaiketsu.html'),
         name='kaiketsu'),
     path(
+        'decreedly/',
+        TemplateView.as_view(template_name='decreedly.html'),
+        name='decreedly'),
+    path(
         'illustration/',
         TemplateView.as_view(template_name='illustration.html'),
         name='illustration'),
