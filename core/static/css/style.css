@@ -96,7 +96,7 @@
     display: flex;
     flex-direction: row;
     padding-top: 1%;
-    height: 40%;
+    
    
    
    
@@ -107,7 +107,8 @@
     
     
     width: 40%;
-    height: 60%;
+    height: 80%;
+    padding-top: 2%;
 }
 
 .bio {
@@ -207,4 +208,28 @@
     .f5-ns {
         font-size: 1rem;
     }
+}
+
+
+@media screen and (max-width: 30em) {
+    .container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        flex-wrap: wrap;
+    
+    }
+    .container .image {
+
+        width: 80%;
+
+
+    }
+
+    .container .bio {
+
+        width: 100%;
+        margin: 0 20px;
+        
+    }
+
 }
