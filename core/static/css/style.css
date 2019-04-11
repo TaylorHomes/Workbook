@@ -12,12 +12,19 @@
     height: 100%;
     padding-top: 50px;
     
+   
+    
 }
 
 .sheet {
 
-    width: 650px;
-    height: 800px;
+    /* width: 650px;
+    height: 800px; */
+    width: 70%;
+    height: 80%;
+    border: solid;
+    
+    
     
   
   
@@ -114,7 +121,7 @@
 .bio {
     padding-top: 10%;
     width: 50%;
-}
+   
 
 .bookend {
 

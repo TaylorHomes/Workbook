@@ -5,10 +5,10 @@ name = "pypi"
 
 [packages]
 django-extensions = "*"
-"psycopg2" = "*"
 gunicorn = "*"
 django-heroku = "*"
 Django = "*"
+reportlab = "*"
 
 [dev-packages]
 
